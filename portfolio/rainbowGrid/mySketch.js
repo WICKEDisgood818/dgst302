@@ -6,9 +6,7 @@ let colors = [];
 let bg = "#000000";
 
 function setup() {
-	r = 0;
-	g = 0;
-	b = 0;
+	colors = []
 	
 	createCanvas(windowWidth, windowHeight);
 	background(bg); // black background
@@ -20,9 +18,21 @@ function setup() {
 	colors.push([r, g, b]);
 
 	for (let i = 0; i < 4; i++) {
-		r = (r + 15) % 256;
-		g = (g + 15) % 256;
-		b = (b + 15) % 256;
+		if (r + 15 < 256) {
+			r += 15;
+		} else {
+			r = 255;
+		}
+		if (g + 15 < 256) {
+			g += 15;
+		} else {
+			g = 255;
+		}
+		if (b + 15 < 256) {
+			b += 15;
+		} else {
+			b = 255;
+		}
 		colors.push([r, g, b]);
 	}
 }
