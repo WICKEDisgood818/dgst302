@@ -23,17 +23,17 @@ function setup() {
 
 	for (let i = 0; i < 4; i++) {
 		if (r + 15 < 256) {
-			r += 15;
+			r += 25;
 		} else {
 			r = 255;
 		}
 		if (g + 15 < 256) {
-			g += 15;
+			g += 25;
 		} else {
 			g = 255;
 		}
 		if (b + 15 < 256) {
-			b += 15;
+			b += 25;
 		} else {
 			b = 255;
 		}
