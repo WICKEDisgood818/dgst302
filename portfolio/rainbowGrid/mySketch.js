@@ -22,17 +22,17 @@ function setup() {
 	colors.push([r, g, b]);
 
 	for (let i = 0; i < 4; i++) {
-		if (r + 15 < 256) {
+		if (r + 25 < 256) {
 			r += 25;
 		} else {
 			r = 255;
 		}
-		if (g + 15 < 256) {
+		if (g + 25 < 256) {
 			g += 25;
 		} else {
 			g = 255;
 		}
-		if (b + 15 < 256) {
+		if (b + 25 < 256) {
 			b += 25;
 		} else {
 			b = 255;
