@@ -158,7 +158,7 @@ function draw() {
 	}
 	
 	//option menu header
-	textFont("Courier");
+	textFont("Courier New");
 	textSize(25);
 	textAlign(LEFT, BOTTOM);
 	fill("black");
