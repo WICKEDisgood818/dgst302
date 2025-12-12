@@ -17,9 +17,9 @@
 		function randomizeColors() {
 			let r = document.querySelector(':root');
 			for (let i = 0; i < 3; i += 1) {
-				let color = colors[getRandomInt(3)];
+				let color = colors[getRandomInt(5)];
 				while (usedNums.includes(color)) {
-					color = colors[getRandomInt(3)];
+					color = colors[getRandomInt(5)];
 				}
 				usedNums.push(color);
 				r.style.setProperty("--color" + (i + 1), color);
