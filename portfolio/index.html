@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Apple: Think Different-->
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+	
+	<script>
+		// Random function from:
+		// 	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+		function getRandomInt(max) {
+  		return Math.floor(Math.random() * max);
+		}
+		const colors = ["#993399", "#5261ab", "#458b85"];
+		let usedNums = [];
+		function randomizeColors() {
+			let r = document.querySelector(':root');
+			for (let i = 0; i < 3; i += 1) {
+				let color = colors[getRandomInt(3)];
+				while (usedNums.includes(color)) {
+					color = colors[getRandomInt(3)];
+				}
+				usedNums.push(color);
+				r.style.setProperty("--color" + (i + 1), color);
+			}
+			usedNums = [];
+			return 0
+		}
+	</script>
+</head>
+<body onclick="randomizeColors()";>   
+	
+<center>
+	<pre>
+
+
+<div style="color:var(--color1)">Here's
+				to
+the							
+								crazy
+ones.		</div>
+<div style="color:var(--color2)">											The
+misfits.										</div>
+<div style="color:var(--color3)">The					
+					rebels.</div></pre>
+</center>
+	
+</body>
+</html>

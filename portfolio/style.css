@@ -1,0 +1,15 @@
+pre {
+	font-family: Times New Roman;
+	font-family: "Rye";
+	font-size: 25px;
+}
+
+body {
+	background-color: black;
+}
+
+:root {
+			--color1:#993399;
+			--color2:#5261ab;
+			--color3:#458b85;
+}
