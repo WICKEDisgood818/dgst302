@@ -8,7 +8,7 @@ let bg = "#000000";
 function setup() {
 	colors = []
 	
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(900, 900);
 	background(bg); // black background
 	noLoop(); // no animation for now
 
