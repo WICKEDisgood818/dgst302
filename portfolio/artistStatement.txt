@@ -1,0 +1,26 @@
+	My original idea when it came to the final project was to have some kind of 
+animal, drawn piece by piece using built-in p5.js shapes, with various features 
+that changed after a certain amount of time. Upon further consideration, I opted 
+for a more mythical creature and allowing the user to choose the features instead 
+of them being randomly assigned. One thing that remained the same through both 
+iterations, though, was the idea of the creature being a random color. 
+	One of my favorite things to do throughout the semester has been to utilize 
+different colors in my projects, both with hex codes and RGB values. As a 
+computer science major, the way in which computers display their pixels fascinates 
+me. I love to mess with colors in html and css to see how they look together, and 
+that love transferred seamlessly into doing the same thing in p5.js. 
+	Overall, I think I achieved everything I had set out to do. I added all of the 
+different characteristics I wanted to add and the page effectively switches 
+between them when the user clicks on the correct locations. I had a bit of trouble 
+doing the arms and the stripes. My original approach with the arms was to rotate 
+ellipses, but I had a really hard time trying to figure out exactly how the rotate 
+function worked, so I chose to use curves instead. As for the stripes, originally 
+I was going to curve them slightly, kind of like when you view a tiger from the 
+back. I was going to do this by layering circles, then I realized that eventually 
+the circles would be visible outside of the base shape, so I decided to just make 
+the stripes straight and use the line function.
+	I wasn’t really inspired by any of my own work, but I did draw inspiration from 
+something I used to do when I was a kid. I’ve always had a pretty active 
+imagination, but I’ve never been much of an artist. Because of these two facts, I 
+always loved those websites you could use to design characters. Those websites were 
+where I got the general idea from.
