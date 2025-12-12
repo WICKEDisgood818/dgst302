@@ -6,12 +6,16 @@ let colors = [];
 let bg = "#000000";
 
 function setup() {
-	colors = []
+	let can = createCanvas(900, 900);
+	/* Method of canvas positioning found at this link:
+		https://github.com/processing/p5.js/wiki/Positioning-your-canvas */
+	can.position((windowWidth - width) / 2, (windowHeight - height) / 2);
 	
-	createCanvas(900, 900);
 	background(bg); // black background
 	noLoop(); // no animation for now
-
+	
+	colors = []
+	
 	r = random(0, 256);
 	g = random(0, 256);
 	b = random(0, 256);
