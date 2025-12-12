@@ -13,13 +13,13 @@ function setup() {
 	r = random(0, 256);
 	g = random(0, 256);
 	b = random(0, 256);
-	colors.append([r, g, b]);
+	colors.push([r, g, b]);
 
 	for (let i = 0; i < 4; i++) {
 		r = (r + 15) % 256;
 		g = (g + 15) % 256;
 		b = (b + 15) % 256;
-		colors.append([r, g, b]);
+		colors.push([r, g, b]);
 	}
 }
 
