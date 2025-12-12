@@ -6,6 +6,10 @@ let colors = [];
 let bg = "#000000";
 
 function setup() {
+	r = 0;
+	g = 0;
+	b = 0;
+	
 	createCanvas(windowWidth, windowHeight);
 	background(bg); // black background
 	noLoop(); // no animation for now
