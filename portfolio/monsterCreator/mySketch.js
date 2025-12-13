@@ -2,13 +2,17 @@ let br, bg, bb;
 let mr, mg, mb, brightness;
 let eyes, mouth, fangs, horns, arms, markings;
 let onButton, offButton;
+let names = ["Greg", "Blob", "Adam", "Glob", "Troy", "Klob", "Gorb", "Cletus", 
+			"Shrek", "Rob"];
+let adjs = ["Hateful", "Bashful", "Grumpy", "Evil", "Great", "Dreadful", "Sleepy",
+			"Happy", "Dancer", "Lousy"];
+let name, adj;
 
 function setup() {
 	let can = createCanvas(800, 800);
 	/* Method of canvas positioning found at this link:
 		https://github.com/processing/p5.js/wiki/Positioning-your-canvas */
 	can.position((windowWidth - width) / 2, (windowHeight - height) / 2);
-	
 	background("white");
 	noStroke();
 	angleMode(DEGREES);
@@ -36,6 +40,8 @@ function setup() {
 	horns = random([true, false]);
 	arms = random([0, 2, 4, 6]);
 	markings = random(["none", "stripes", "spots"]);
+	name = random(names);
+	adj = random(adjs);
 
 	onButton = "#878787";
 	offButton = "#b6b6b6";
@@ -46,6 +52,10 @@ function draw() {
 
 	fill("black");
 	rect(0, 700, 800, 100);
+
+	textSize(35);
+	textStyle(BOLD);
+	text(name + " the " + adj, 500, 75);
 	
 	//horns
 	if (horns) {
@@ -158,7 +168,7 @@ function draw() {
 	}
 	
 	//option menu header
-	textFont("Courier New");
+	textFont("Courier");
 	textSize(25);
 	textAlign(LEFT, BOTTOM);
 	fill("black");
@@ -400,6 +410,8 @@ function mousePressed() {
 			horns = random([true, false]);
 			arms = random([0, 2, 4, 6]);
 			markings = random(["none", "stripes", "spots"]);
+			name = random(names);
+			adj = random(adjs);
 		}
 	}
 	
