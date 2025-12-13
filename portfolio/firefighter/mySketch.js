@@ -1,4 +1,4 @@
-let speed = 1;
+let speed = 2;
 let xspeed = speed;
 let yspeed = speed;
 let x = 150;
