@@ -13,7 +13,7 @@ function setup() {
 	can.position((windowWidth - width) / 2, (windowHeight - height) / 2);
 	
 	background("#84e258");
-	cursor("https://i.imgur.com/Xjw3gXt.png");
+	cursor("../images/fire.png");
 }
 
 function draw() {
